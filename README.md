@@ -23,7 +23,7 @@ Run directly using Python:
 ```bash
 python app.py <city>
 # Example
-python app.py Karachi
+python app.py Durban
 ````
 
 ---
@@ -39,7 +39,7 @@ docker build -t weather-cli-app .
 ### Run the container:
 
 ```bash
-docker run weather-cli-app Lahore
+docker run weather-cli-app Durban
 ```
 
 ---
@@ -50,7 +50,7 @@ On every push to the `main` branch:
 
 1. Builds the Docker image
 2. Tags it with the **first 7 characters** of the Git commit SHA
-3. Runs the container and tests it using a sample city (`London`)
+3. Runs the container and tests it using a sample city (`Newcastle`)
 4. Pushes the image to [Docker Hub](https://hub.docker.com/r/thedevopsforge/weather-cli-app)
 
 GitHub Secrets used:
@@ -82,8 +82,8 @@ weather-cli-app/
 ## ✅ Example Output
 
 ```bash
-$ python app.py London
-London: 🌦 +16°C
+$ python app.py Newcastle
+Newcastle: 🌦 +16°C
 ```
 
 ---
